@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container-fluid {
+        width: 640px;
+        height: 600px;
+        display: flex;
+        border: 1px solid black;
+        margin-left: 400px;
+        border-radius: 5px;
+
+         }
+    .div1 {
+        margin-top: 80px;
+        width: 400px;
+        }
+    .div2{
+        margin-top: 80px;
+        width:400px;
+        }
+    .form-control {
+        padding: 10px;
+        width: 250px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+        margin-left: 25px;
+        background: none;
+        
+        }
+    label{font-size: 20px;
+        margin-left: 35px;
+    }
+    .b {
+        margin-left: 220px;
+        margin-top: 20px;
+        width:100px;
+        padding:10px;
+        background-color: green;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .b1 {
+        margin-left: 10px;
+        margin-top: 20px;
+        width:100px;
+        padding:10px;
+        background-color:red;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    h1{
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    
+   <form>
+    <h1>Registration Form</h1>
+       <div class="container-fluid">
+             <div class="div1">
+            <label>Title</label>
+                    <div>
+                        <select name="cars" class="form-control">
+                            <option value="volvo"></option>
+                            <option value="saab">Mr</option>
+                            <option value="opel">Mrs</option>
+                            <option value="audi">Miss</option>
+                          </select>
+                    </div>
+                <label>FirstName</label>
+                    <div>
+                        <input type="text"class="form-control">
+                    </div>
+                <label>LastName</label>
+                    <div>
+                        <input type="text"class="form-control">
+                    </div>
+                <label>Email Id</label>
+                    <div>
+                        <input type="text"class="form-control">
+                    </div>
+                    <input type="submit" value="Sign up" class="b">
+                </div>
+                <div class="div2">
+                    <label>Password</label>
+                    <div>
+                        <input type="text"class="form-control">
+                    </div>
+                        <label>Confirm Password</label>
+                    <div>
+                        <input type="text"class="form-control">
+                    </div>
+                    <label>dateofBirth</label>
+                    <div>
+                        <input type="date"class="form-control" name="date">
+                    </div>
+                    <label>Phone No</label>
+                    <div>
+                        <input type="text"class="form-control">
+                    </div>
+                    <input type="submit" value="Cancel" class="b1">
+                 </div>
+            </div>
+    </form>
+</body>
+</html>
