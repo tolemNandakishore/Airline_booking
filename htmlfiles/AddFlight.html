@@ -1,58 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .container-fluid
-        {
-            width: 500px;
-            height: 300px;
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+
+        button {
+            margin-top:-190px;
+            width: 75px;
+            background-color: green;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:72px;
+
+
+        }
+
+        #form {
+            border-radius: 10px;
+           
             border: 1px solid black;
-            border-radius: 3px;
-            margin-left: 500px;
-            margin-top: 200px;
-         }
-         .div1
-         {
-            margin-top: 50px;
-           margin-left: 90px;
-         }
-         input{
-            margin-left: 6cqmin;
+            width:400px;
+            color: black;
             padding: 10px;
-            width: 200px;
-            border-radius: 5px;
-         }
-         .b
-         {
-            padding: 10px;
-            width: 100px;
-            margin-left: 200px;
-            margin-top: 60px;
-         }
-         h1{
+            height: 500px;
+            margin-top:20px;
+
+
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            position:relative;
+            top: 5px; 
+            left: 18px; 
+            
+        }
+        h2{
             text-align: center;
-            border-bottom: 1px solid black;
-            padding: 10px;
-            font-family:  sans-serif;
-            font: 1.5em sans-serif;
-           }
+        }
+        label {
+            width: 100px;
+            display: inline-block;
+            margin: 7px;
+            text-align: center;
+        }
+        input{
+
+            width: 209px;
+            height: 27px;
+            display: inline-block;
+            margin-bottom:4px;    
+        
+        }
+        #airline{
+            
+            width: 209px;
+            height: 27px;
+            display: inline-block;
+            margin-bottom:4px;   
+        }
+        #flightno{
+            width: 209px;
+            height: 27px;
+            display: inline-block;
+            margin-bottom:4px;  
+        }
+        #from{
+            width: 209px;
+            height: 27px;
+            display: inline-block;
+            margin-bottom:4px;   
+        }
+        #to{
+            width: 209px;
+            height: 27px;
+            display: inline-block;
+            margin-bottom:4px;  
+        }
+        #depart{
+            width: 203px;
+            height: 25px;
+            display: inline-block;
+            margin-bottom:4px;  
+        }
+        #arrive{
+            width: 203px;
+            height: 25px;
+            display: inline-block;
+            margin-bottom:4px;
+        }
+      #duration{
+        width: 209px;
+            height: 27px;
+            display: inline-block;
+            margin-bottom:4px;
+      }
+      video{
+                width:100%;
+                height: 100vh;
+            }
     </style>
 </head>
-<body>
-    
-    <div class="container-fluid">
-        <h1>ADD Flight</h1>
-        <div class="div1">
-            <label>Flight No</label>
-            <input typr="text">
-        </div>
-        <div>
-            <button  class="b">Add Flight</button>
-        </div>
 
-    </div>  
+<body>
+
+    
+    <div class="container">
+        <div id="form">
+            <h2>Add Flight</h2>
+            <form>
+                <label>Flight No.</label>
+                
+                <select name="flightno" id="flightno" >
+                    <option value="from"> Select </option>
+                    <option value="indigo">Indigo-6E993</option>
+                    <option value="SPICEJET">SPICEJET-SG8164</option>
+                    <option value=" premium economy"> VISTARA-UK808</option>
+                    <option value="first class">Flybig-S9</option>
+                  </select>
+                <br><br>
+
+
+                <label>From</label>
+                <select name="from" id="from" >
+                    <option value="from"> Select </option>
+                    <option value="bom">BOM - Mumbai</option>
+                    <option value="del">DEL - New Delhi</option>
+                    <option value="blr"> BLR - Bengaluru</option>
+                    <option value="first class">Kolkata</option>
+                  </select>
+                <br><br>
+
+                <label>To</label>
+                <select name="to" id="to" >
+                    <option value="time"> Select </option>
+                    <option value="del">DEL - New Delhi</option>
+                    <option value="hyd">HYD - Hyderabad</option>
+                    <option value="rpr">RPR - Raipur</option>
+                    <option value="first class">Patna</option>
+                  </select>
+                <br><br>
+                
+               
+                <label for="depart">Depart</label>
+                <input type="datetime-local" id="depart" name="depart">
+                <br><br>
+
+                <label for="arrive">Arrive</label>
+                <input type="datetime-local" id="arrive" name="arrive">
+                <br><br>
+
+                <label>Duration</label>
+                <select name="duration" id="duration" >
+                    <option value="time"> Select </option>
+                    <option value="time"> 2hr 5min </option>
+                    <option value="time">2hr</option>
+                    <option value="time">24hr 20min </option>
+                    <option value="time">01hr 10min</option>
+                  </select>
+                <br><br>
+
+                <label>Cabin</label>
+                <select name="airline" id="airline" >
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value=" premium economy"> Premium Economy</option>
+                    <option value="first class">First Class</option>
+                  </select>
+                <br><br>
+
+                <div class="center">
+                    <button>Add</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+   
+      
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
