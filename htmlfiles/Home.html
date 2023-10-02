@@ -13,9 +13,9 @@
 
 
     <style>
-        
+       
         .bg-cp {
-            background-color: rgb(218, 226, 167);
+            background-color: rgb(233, 240, 237);
         }
 
         .fs-7 {
@@ -35,13 +35,15 @@
             height: 52px;
             ;
         }
-        .number{
+
+        .number {
             width: 48px;
         }
-        #search-btn{
-         height: 52px;
-         margin-top: 16px;
-         margin-right: 5px;
+
+        #search-btn {
+            height: 52px;
+            margin-top: 16px;
+            margin-right: 5px;
         }
     </style>
     <style>
@@ -50,17 +52,18 @@
 </head>
 
 <body>
-    <div class="container " >
- 
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between"> 
+    <div class="container-fluid bg-secondary ">
 
-            <img src="https://static.vecteezy.com/system/resources/previews/016/469/320/non_2x/aircraft-airplane-flight-taking-off-plane-logo-vector.jpg"
-                width="200" alt="Logo">
+        <div id="nav1" class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+
+            <a href="Home.html" style="text-decoration: none;">
+                <h2>SkyFly</h2>
+            </a>
             <div class="d-none d-xl-flex align-items-center">
                 <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">Login</button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">User</a></li>
-                    <li><a class="dropdown-item" href="#">Admin</a></li>
+                    <li><a class="dropdown-item" href="Admin.html">Admin</a></li>
                 </ul>
             </div>
         </div>
@@ -72,8 +75,8 @@
         </div>
     </div>
     <div class="position-relative">
-        <img src="https://images.wallpaperscraft.com/image/single/sky_altitude_clouds_48093_1920x1080.jpg" alt="PlaneIMG"
-            class="img-fluid d-none d-xl-block">
+        <img src="https://images.wallpaperscraft.com/image/single/sky_altitude_clouds_48093_1920x1080.jpg"
+            alt="PlaneIMG" class="img-fluid d-none d-xl-block ">
         <div class="d-none d-xl-block position-absolute start-50 top-50 translate-middle">
             <div class="rounded p-3 bg-cp" style="margin-bottom: 40%; width: 1080px;">
                 <div class="d-flex align-items-center">
@@ -148,7 +151,7 @@
                         <input type="number" id="number" value="0" class="number">
                         <button class="btn btn-success plus">+</button>
                     </div>
-                    <div  id="search-btn" class="btn btn-success fw-bold btn-lg ">Search Flights</div>
+                    <div id="search-btn" class="btn btn-success fw-bold btn-lg ">Search Flights</div>
                 </div>
             </div>
         </div>
